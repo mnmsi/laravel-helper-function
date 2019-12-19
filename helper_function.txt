@@ -1,0 +1,28 @@
+1. Create helpers.php File in app directory
+
+example file:
+
+<?php
+  
+  function random_code(){
+ 
+    return rand(1111, 9999);
+  }
+
+
+2. Add File Path In composer.json File
+	
+"autoload": {
+    "files": [
+        "app/helpers.php"
+    ],
+    "classmap": [
+        "database/seeds",
+        "database/factories"
+    ],
+    "psr-4": {
+        "App\\": "app/"
+    }
+},
+
+3. Run this command: composer dump-autoload
