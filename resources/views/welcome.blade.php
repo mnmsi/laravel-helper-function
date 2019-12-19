@@ -80,8 +80,15 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    Laravel
+                <div class="">
+                    {{ fhelper() }}<br>
+                    {{ random_code() }}<br>
+                    {{ test() }}<br>
+                    {{ third() }}<br>
+                    {{ FirstHelper::classHelper() }}<br>
+                    {{ FirstHelper::chFirst() }}<br>
+                    {{ SecondCH::secondCH() }}
+
                 </div>
 
                 <div class="links">
@@ -92,7 +99,7 @@
                     <a href="https://nova.laravel.com">Nova</a>
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="">GitHub</a>
                 </div>
             </div>
         </div>

@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/helper', 'HelperController@index');
+Route::get('/anotherhelper', 'HelperController@anotherhelper');
+Route::get('/third', 'HelperController@third');
+
+
+// class helper function-------------------------------->
+Route::get('/chfirst', 'ClassHelperController@First');
+Route::get('/chsecond', 'ClassHelperController@Second');
